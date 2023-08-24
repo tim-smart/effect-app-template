@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "build/js",
+    "rootDir": "src",
+    "tsBuildInfoFile": "build/tsbuildinfo/build.tsbuildinfo"
+  },
+  "include": ["src/**/*.ts"],
+  "references": [{ "path": "../core/tsconfig.build.json" }]
+}

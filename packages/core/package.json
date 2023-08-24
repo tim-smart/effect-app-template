@@ -1,0 +1,29 @@
+{
+  "name": "@app/core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "publishConfig": {
+    "access": "restricted",
+    "directory": "dist"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/index.js"
+    },
+    "./*": {
+      "require": "./dist/*.js"
+    }
+  },
+  "scripts": {
+    "clean": "rimraf build dist",
+    "build": "tsc --project tsconfig.build.json",
+    "build-watch": "tsc --watch --project tsconfig.build.json",
+    "test": "vitest"
+  },
+  "sideEffects": [],
+  "dependencies": {
+    "@effect/schema": "^0.33.2",
+    "effect": "2.0.0-next.29"
+  }
+}

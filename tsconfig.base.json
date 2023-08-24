@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "moduleDetection": "force",
+    "composite": true,
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "NodeNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "noErrorTruncation": true,
+    "allowJs": false,
+    "checkJs": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noUncheckedIndexedAccess": true,
+    "strictNullChecks": true,
+    "noEmit": false,
+    "baseUrl": ".",
+    "target": "ESNext",
+    "module": "NodeNext",
+    "incremental": true,
+    "paths": {
+      "@app/core/test/*": ["./packages/core/test/*"],
+      "@app/core/*": ["./packages/core/src/*"],
+      "@app/core": ["./packages/core/src/index"],
+
+      "@app/http/test/*": ["./packages/http/test/*"],
+      "@app/http/*": ["./packages/http/src/*"],
+      "@app/http": ["./packages/http/src/index"]
+    },
+    "plugins": [{ "name": "@effect/language-service" }]
+  },
+  "exclude": ["node_modules", "build"]
+}

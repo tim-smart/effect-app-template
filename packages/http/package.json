@@ -1,0 +1,22 @@
+{
+  "name": "@app/http",
+  "version": "0.1.0",
+  "private": true,
+  "description": "",
+  "publishConfig": {
+    "access": "restricted",
+    "directory": "dist"
+  },
+  "scripts": {
+    "clean": "rimraf build dist",
+    "build": "pnpm clean && tsup",
+    "build-watch": "tsc --watch --project tsconfig.build.json",
+    "test": "vitest"
+  },
+  "sideEffects": [],
+  "dependencies": {
+    "@app/core": "workspace:^0.1.0",
+    "@effect/platform-node": "^0.13.7",
+    "effect": "2.0.0-next.29"
+  }
+}

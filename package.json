@@ -1,0 +1,27 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "scripts": {
+    "clean": "ultra -r clean && rimraf tsconfig.tsbuildinfo",
+    "build": "ultra -r -b build",
+    "build-watch": "tsc -b tsconfig.json --watch",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "@effect/language-service": "0.0.21",
+    "@types/chai": "^4.3.5",
+    "@types/node": "^20.5.3",
+    "@vitest/coverage-v8": "^0.34.2",
+    "@vitest/expect": "^0.34.2",
+    "concurrently": "^8.2.1",
+    "prettier": "^3.0.2",
+    "rimraf": "^5.0.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "ultra-runner": "^3.10.5",
+    "vite": "^4.4.9",
+    "vitest": "0.34.2"
+  }
+}
