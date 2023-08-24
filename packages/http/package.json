@@ -10,7 +10,7 @@
   "scripts": {
     "clean": "rimraf build dist",
     "build": "pnpm clean && tsup",
-    "build-watch": "tsc --watch --project tsconfig.build.json",
+    "dev": "nodemon",
     "test": "vitest"
   },
   "sideEffects": [],
