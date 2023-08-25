@@ -10,7 +10,9 @@
   "scripts": {
     "clean": "rimraf build dist",
     "build": "pnpm clean && tsup",
+    "build-pkg": "pnpm build && pkg -c package.json dist/index.js",
     "dev": "nodemon",
+    "docker": "pnpm build-pkg && docker build",
     "test": "vitest"
   },
   "sideEffects": [],
@@ -18,5 +20,12 @@
     "@app/core": "workspace:^0.1.0",
     "@effect/platform-node": "^0.13.7",
     "effect": "2.0.0-next.29"
+  },
+  "pkg": {
+    "targets": [
+      "node18-alpine-x64",
+      "node18-macos-x64"
+    ],
+    "outputPath": "build/pkg"
   }
 }

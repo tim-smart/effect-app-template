@@ -17,6 +17,7 @@
     "@vitest/expect": "^0.34.2",
     "concurrently": "^8.2.1",
     "nodemon": "^3.0.1",
+    "pkg": "^5.8.1",
     "prettier": "^3.0.2",
     "rimraf": "^5.0.1",
     "ts-node": "^10.9.1",
