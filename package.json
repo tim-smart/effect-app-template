@@ -12,7 +12,7 @@
   "devDependencies": {
     "@effect/language-service": "0.0.21",
     "@types/chai": "^4.3.5",
-    "@types/node": "^20.5.3",
+    "@types/node": "^20.5.6",
     "@vitest/coverage-v8": "^0.34.2",
     "@vitest/expect": "^0.34.2",
     "concurrently": "^8.2.1",
