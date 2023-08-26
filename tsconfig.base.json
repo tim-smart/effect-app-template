@@ -26,15 +26,15 @@
     "module": "NodeNext",
     "incremental": true,
     "paths": {
-      "@app/core/test/*": ["./packages/core/test/*"],
-      "@app/core/*": ["./packages/core/src/*"],
-      "@app/core": ["./packages/core/src/index"],
+      "@app/core/test/*": ["./packages/core/test/*.js"],
+      "@app/core/*": ["./packages/core/src/*.js"],
+      "@app/core": ["./packages/core/src/index.js"],
 
-      "@app/http/test/*": ["./packages/http/test/*"],
-      "@app/http/*": ["./packages/http/src/*"],
-      "@app/http": ["./packages/http/src/index"]
+      "@app/http/test/*": ["./packages/http/test/*.js"],
+      "@app/http/*": ["./packages/http/src/*.js"],
+      "@app/http": ["./packages/http/src/index.js"]
     },
     "plugins": [{ "name": "@effect/language-service" }]
   },
-  "exclude": ["node_modules", "build"]
+  "exclude": ["node_modules", "dist", "build"]
 }

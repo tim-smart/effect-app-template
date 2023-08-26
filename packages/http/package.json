@@ -2,15 +2,20 @@
   "name": "@app/http",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "description": "",
   "publishConfig": {
     "access": "restricted",
     "directory": "dist"
   },
+  "exports": {
+    ".": "./src/index.js",
+    "./*": "./src/*.js"
+  },
   "scripts": {
     "clean": "rimraf build dist",
-    "build": "tsup",
-    "build-pkg": "pnpm build && pkg -c package.json dist/index.js",
+    "build-tsup": "tsup",
+    "build-pkg": "pnpm build-tsup && pkg -c package.json dist/index.js",
     "dev": "nodemon",
     "docker": "pnpm build-pkg && docker build",
     "test": "vitest"
@@ -18,7 +23,7 @@
   "sideEffects": [],
   "dependencies": {
     "@app/core": "workspace:*",
-    "@effect/platform-node": "^0.13.9",
+    "@effect/platform-node": "^0.13.10",
     "effect": "2.0.0-next.29"
   },
   "pkg": {

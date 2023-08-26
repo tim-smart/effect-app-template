@@ -2,18 +2,15 @@
   "name": "@app/core",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "description": "",
   "publishConfig": {
     "access": "restricted",
     "directory": "dist"
   },
   "exports": {
-    ".": {
-      "require": "./dist/index.js"
-    },
-    "./*": {
-      "require": "./dist/*.js"
-    }
+    ".": "./src/index.js",
+    "./*": "./src/*.js"
   },
   "scripts": {
     "clean": "rimraf build dist",

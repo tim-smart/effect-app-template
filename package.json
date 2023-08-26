@@ -2,6 +2,7 @@
   "name": "app",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "description": "",
   "scripts": {
     "clean": "ultra -r clean && rimraf tsconfig.tsbuildinfo",
@@ -13,8 +14,8 @@
     "@effect/language-service": "0.0.21",
     "@types/chai": "^4.3.5",
     "@types/node": "^20.5.6",
-    "@vitest/coverage-v8": "^0.34.2",
-    "@vitest/expect": "^0.34.2",
+    "@vitest/coverage-v8": "^0.34.3",
+    "@vitest/expect": "^0.34.3",
     "concurrently": "^8.2.1",
     "nodemon": "^3.0.1",
     "pkg": "^5.8.1",
@@ -25,6 +26,6 @@
     "typescript": "^5.2.2",
     "ultra-runner": "^3.10.5",
     "vite": "^4.4.9",
-    "vitest": "0.34.2"
+    "vitest": "0.34.3"
   }
 }
